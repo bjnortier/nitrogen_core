@@ -28,5 +28,6 @@ render_element(Record) ->
         {type, text}, 
         {class, [textbox, Record#textbox.class]},
         {style, Record#textbox.style},
+        {disabled, Record#textbox.disabled},
         {value, Value}
     ]).
