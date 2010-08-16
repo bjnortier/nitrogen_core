@@ -81,7 +81,7 @@
 -record(link, {?ELEMENT_BASE(element_link), title = "", text="", body="", html_encode=true, url="javascript:", postback, delegate}).
 -record(error, {?ELEMENT_BASE(element_error), text="", html_encode=true}).
 -record(span, {?ELEMENT_BASE(element_span), text="", html_encode=true}).
--record(button, {?ELEMENT_BASE(element_button), text="Button", html_encode=true, postback, delegate}).
+-record(button, {?ELEMENT_BASE(element_button), text="Button", html_encode=true, postback, delegate, disabled=false}).
 -record(literal, {?ELEMENT_BASE(element_literal), text="", html_encode=true}).
 -record(textbox, {?ELEMENT_BASE(element_textbox), text="", html_encode=true, next, postback, delegate, disabled="false"}).
 -record(hidden, {?ELEMENT_BASE(element_hidden), text="", html_encode=true}).
