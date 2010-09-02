@@ -15,4 +15,4 @@ render_action(Record) ->
     [CustomValidatorAction, Script].
 
 validate(_, Value) -> 
-    Value /= [].
+    string:strip(Value) /= [].
